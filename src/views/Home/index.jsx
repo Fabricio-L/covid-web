@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { Fragment } from 'react'
+import DataTable from '../../components/DataTable'
 
 const Home = () => {
-  return <div>Covid App</div>
+  return (
+    <Fragment>
+      <DataTable />
+    </Fragment>
+  )
 }
 
 export default Home
