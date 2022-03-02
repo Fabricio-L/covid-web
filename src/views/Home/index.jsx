@@ -1,11 +1,14 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import DataTable from '../../components/DataTable'
+import useStyles from './styles'
 
 const Home = () => {
+  const classes = useStyles()
+
   return (
-    <Fragment>
+    <div className={classes.root}>
       <DataTable />
-    </Fragment>
+    </div>
   )
 }
 
