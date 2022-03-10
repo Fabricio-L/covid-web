@@ -1,18 +1,26 @@
 import React from 'react'
-import { AppBar, Toolbar, Typography } from '@mui/material'
-import WbSunnyRoundedIcon from '@mui/icons-material/WbSunnyRounded'
+import { AppBar, Toolbar, Typography, Box } from '@mui/material'
+import { useNavigate } from 'react-router-dom'
+import CoronavirusIcon from '@mui/icons-material/Coronavirus'
 import useStyles from './styles'
 
 const Header = () => {
   const classes = useStyles()
+  const navigate = useNavigate()
+
+  const handleClick = () => {
+    navigate('/', { replace: true })
+  }
 
   return (
     <AppBar position="static">
-      <Toolbar className={classes.rootHeader}>
-        <WbSunnyRoundedIcon />
-        <Typography variant="h5" flexGrow={1}>
-          Weather
-        </Typography>
+      <Toolbar>
+        <Box className={classes.rootHeader} onClick={handleClick}>
+          <CoronavirusIcon />
+          <Typography variant="h5" flexGrow={1} style={{ marginLeft: '20px' }}>
+            Covid Cases
+          </Typography>
+        </Box>
       </Toolbar>
     </AppBar>
   )

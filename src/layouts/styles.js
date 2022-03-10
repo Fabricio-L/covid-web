@@ -3,6 +3,7 @@ import { makeStyles } from '@mui/styles'
 const useStyles = makeStyles({
   rootHeader: {
     display: 'flex',
+    cursor: 'pointer',
     alignItems: 'center',
   },
   rootFooter: {
