@@ -2,7 +2,6 @@ import { makeStyles } from '@mui/styles'
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    width: 'fit-content',
     background:
       'linear-gradient(320deg, rgba(57,172,232,1) 0%, rgb(232 232 232) 50%, rgba(255,221,141,1) 100%)',
     display: 'flex',

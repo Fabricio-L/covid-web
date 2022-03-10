@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
         alignItems: 'flex-start',
       },
     },
-    '& .MuiToolbar-root': {
+    '& .css-1t5wrdm-MuiDataGrid-filterForm': {
       [theme.breakpoints.down(724)]: {
         flexDirection: 'column',
         alignItems: 'flex-start',

@@ -5,6 +5,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
+    height: '82vh',
   },
   boxMain: {
     width: 'fit-content',
