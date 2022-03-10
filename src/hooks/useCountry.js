@@ -6,7 +6,7 @@ const useCountry = (props) => {
 
   useMemo(async () => {
     setInfo(await apiGet(props, null))
-  }, [])
+  }, [props])
 
   return {
     info,

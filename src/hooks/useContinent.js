@@ -44,14 +44,10 @@ const useContinent = (props) => {
   useMemo(async () => {
     const response = await apiGet(null, props)
 
-    console.log(response)
-
     if (response) {
       formatRows(response)
     }
-
-    console.log(rows)
-  }, [])
+  }, [props])
 
   return {
     rows,
