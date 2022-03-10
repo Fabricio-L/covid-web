@@ -26,9 +26,6 @@ const useAll = () => {
     },
   ]
 
-  // valueGetter: (params) =>
-  // `${params.row.firstName || ''} ${params.row.lastName || ''}`
-
   function formatRows(response) {
     let row
 

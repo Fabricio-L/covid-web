@@ -7,12 +7,15 @@ import darkTheme from './themeConfig'
 import Home from './views/Home'
 import Country from './views/Country'
 import Continent from './views/Continent'
+import Header from './layouts/Header'
+import Footer from './layouts/Footer'
 
 const App = () => {
   return (
     <Fragment>
       <ThemeProvider theme={darkTheme}>
         <CssBaseline />
+        <Header />
         <Box height={'100vh'} maxWidth={'80vw'} margin={'auto'}>
           <Routes>
             <Route exact path="/" element={<Home />} />
@@ -20,6 +23,7 @@ const App = () => {
             <Route exact path="/continent/:continent" element={<Continent />} />
           </Routes>
         </Box>
+        <Footer />
       </ThemeProvider>
     </Fragment>
   )
